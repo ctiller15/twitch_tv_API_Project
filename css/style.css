@@ -1,0 +1,157 @@
+/*
+Still not entirely comfortable with media queries. Also not entirely comfortable with the cascade. Remember to practice keep in mind how different types of font elements work together.
+
+Practice working with heights with images.
+
+Learn more about typography. Different types of fonts, font outlines, etc. Arial is safe, but you could do way better.
+*/
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: arial;
+  background-color: #17141F;
+}
+
+h1{
+  font-size: 5em;
+  text-align: center;
+  color: #BBB8C1;
+}
+
+.streams{
+  display: flex;
+  flex-direction: column;
+}
+
+.banner{
+  background-color: #6441A4;
+}
+
+/*Identifying my different containers.*/
+@media only screen and (min-width: 480px) {
+
+  h1{
+    font-size: 3em;
+  }
+  
+.banner{
+  width: 80%;
+  padding: 2%;
+  margin: 0 auto 2%;
+      
+     }
+  
+  .tab{
+    font-size: 1.5em;
+  }
+}
+
+.banner{
+  width: 100%;
+  padding: 2%;
+  margin: 0 auto 2%;
+      
+     }
+  
+  .tab{
+    font-size: 1.5em;
+  }
+
+@media only screen and (min-width: 768px) {
+  h1{
+    font-size: 3em;
+  }
+  
+.banner{
+  width: 70%;
+  padding: 2%;
+  margin: 0 auto 2%;
+           }
+  
+  .tab{
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+
+  h1{
+    font-size: 5em;
+  }
+  
+.banner{
+  width: 80%;
+  padding: 2%;
+  margin: 0 auto 2%;
+           }
+  
+  .tab{
+    font-size: 2.5em;
+  }
+}
+
+.tab{
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  color: #BBB8C1;
+  text-shadow: -1px 0px black, 0px 1px black, 0px -1px black, 1px 0px black;
+}
+
+.online{
+  order: -1;
+}
+
+.offline{
+  order: 0;
+}
+
+.streamFail{
+  order: 10;
+}
+
+.streamFail .tab{
+  background-color: red;
+  font-size: 1em;
+  }
+
+.streamFail .tab p{
+  width: 100%;
+  text-align: center;
+}
+
+.tab .identifier{
+  background-color: #201C2B;
+  width: 30%;
+  font-size: .5em;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+.identifier p{
+  text-align: center;
+}
+
+.mainInfo{
+  text-align: center;
+  width: 70%;
+}
+
+/*Next time, place the text within the image element. It'll make it easier to style.
+
+OR place all of the items within a div. That will also serve the same purpose.*/
+
+a{
+  text-decoration: none;
+  text-shadow: -1px 0px black, 0px 1px black, 0px -1px black, 1px 0px black;
+  color: #BBB8C1;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
